@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollador Freelancer</title>
+    <link rel="preload" href="CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="CSS/style.css" as="style">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    
+</head>
+<body>
+        <header id="header" class="header">
+            <div class="contenedor-titulo-redes">
+                <div>
+                    <h1 class="titulo">Portfolio.</h1>
+                </div>
+                <div id="nav-icon" class="nav-icon oculto">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                <div class="redes">
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/leandro-tanoni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/tanonileandro" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </header>
+        <nav id="navbar" class="navegacion-principal">
+            <ul id="links">
+                <li><a href="#header" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mí</a></li>
+                <li><a href="#aptitudes" onclick="seleccionar(this)">Aptitudes</a></li>
+                <li><a href="#proyectos" onclick="seleccionar(this)">Proyectos</a></li>
+            </ul>
+        </nav>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-inicio">
+            <h2>Tanoni Leandro <span>Desarrollador Freelancer</span></h2>
+            <a class="boton" href="#contacto">Contactar</a>             
+        </div>
+    </section>
+    
+    <main class="contenedor sombra">
+        <section id="sobremi">
+            <h2>Sobre Mí</h2>
+            <div class="sobremi-contenedor">
+                <div class="sobremi-texto">
+                    <p>Soy <span>Tanoni Leandro</span> estudiante de Tecnicatura Universitaria en Programación desde Junio 2022. <br> También me encuentro ampliando mi conocimiento con cursos de Programación en Udemy: <br> <a class="cursos" href="https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/">Universidad Python con Frameworks Django, Flask, etc. +71hrs</a> <br> <a class="cursos" href="https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/">Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL</a>
+                    </p>
+                    <a class="boton" href="PDFs/Currículum_1.pdf" target="_blank"> Mi CV</a>
+                </div>
+            </div>            
+        </section>
+
+        <section id="aptitudes">
+            <h2>Aptitudes</h2>
+            <p>Estos son los lenguajes en los cuales tengo conocimiento:</p>
+            <div class="aptitudes">
+                <div class="aptitud">
+                    <img src="IMG/Aptitudes/html5.png" alt="HTML5" />
+                </div>
+                <div class="aptitud">
+                    <img src="IMG/Aptitudes/css3.png" alt="CSS3" />  
+                </div>
+                <div class="aptitud">
+                    <img src="IMG/Aptitudes/javascript.png" alt="JavaScript" />
+                </div>
+                <div class="aptitud">
+                    <img src="IMG/Aptitudes/C.png" alt="C" />
+                </div>
+                <div class="aptitud">
+                    <img src="IMG/Aptitudes/Python.png" alt="Python" />
+                </div>
+                <div class="aptitud">
+                    <img src="IMG/Aptitudes/PosthreSQL.png" alt="PosthreSQL" />
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Actualmente me encuentro realizando dos proyectos de Desarrollo Web para:</p>
+            <div class="contenedor-proyectos">
+                <section class="proyecto-acertagro">
+                    <a href="https://www.instagram.com/acertagro/" target="_blank">
+                        <img class="acertagro" src="IMG/Acertagro/ACERTAGRO_Iso (2).png" alt="Acertagro">
+                    </a>
+                    <h3>Acertagro® Consultora Agropecuaria</h3>
+                </section>
+                <section class="proyecto-up">
+                    <a href="https://www.instagram.com/upcentrofitness/?hl=es" target="_blank">
+                        <img class="up" src="IMG/UP/134_1601130474.jpeg" alt="UP_Centro_de_Fitness">
+                    </a>
+                    <h3>Gimnasio UP Centro de Fitness</h3>
+                </section>
+            </div>
+
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="form" class="formulario" action="PHP/form.php" method="POST">
+                <fieldset>
+                    <legend>Contactame llenando todos los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="nombre"></label>
+                            <input class="input-text" type="text" name="nombre" id="nombre" placeholder="Nombre" />
+                        </div>
+                        <div class="campo">
+                            <label for="apellido"></label>
+                            <input class="input-text" type="text" name="apellido" id="nombre" placeholder="Apellido" />
+                        </div>
+                        <div class="campo">
+                            <label for="correo"></label>
+                            <input class="input-text" type="email" name="correo" id="correo" placeholder="Mail" />
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje"></label>
+                            <textarea class="input-text" name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="enviar">
+                        <input class="boton" type="submit" value="Enviar" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p>
+            &copy Todos los derechos reservados - 2023 | Tanoni Leandro <span>Desarrollador Freelancer</span> 
+        </p> 
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

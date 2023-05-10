@@ -6,7 +6,7 @@ Projects carried out with different technologies
 
 ### <i><b>Skills useds</b></i>
 <p align="center">
-<a href="https://github.com/tanonileandro/PersonalProjects">
-  <img height="160em"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=tanonileandro&layout=compact&langs_count=10&theme=dark&hide_title=True"/>
-</a>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=c,python,php,js,html,css&perline=14" />
+  </a>
 </p>

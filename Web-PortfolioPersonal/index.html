@@ -15,8 +15,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preload" href="CSS/style.css" as="style">
     <link rel="stylesheet" href="CSS/style.css">
-    
-    
+    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
 </head>
 <body>
         <header id="header" class="header">
@@ -28,8 +27,8 @@
                     <i class="fa-solid fa-bars"></i>
                   </div>
                 <div class="redes">
-                    <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/leandro.tanoni.5" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/tanonileandro/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/leandro-tanoni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/tanonileandro" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
@@ -56,61 +55,91 @@
             <h2>Sobre Mí</h2>
             <div class="sobremi-contenedor">
                 <div class="sobremi-texto">
-                    <p>Soy <span>Tanoni Leandro</span> estudiante de Tecnicatura Universitaria en Programación desde Junio 2022. <br> También me encuentro ampliando mi conocimiento con cursos de Programación en Udemy: <br> <a class="cursos" href="https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/">Universidad Python con Frameworks Django, Flask, etc. +71hrs</a> <br> <a class="cursos" href="https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/">Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL</a>
+                    <p>
+                    ¡Hola! Mi nombre es <span>Tanoni Leandro</span>. Soy estudiante Tecnicatura Universitaria en Programación desde Junio 2022, actualmente soy freelance dedicado a la realización de proyectos en el campo del Desarrollo Web. 
+                    <br>
+                    Mi objetivo es sumar experiencia en difernetes proyectos e ir aplicando las nuevas tecnologias que voy aprendiendo en mi carrera, estoy enfocado en expandir mis conocimientos en programación y explorar nuevas oportunidades en el mercado laboral.
                     </p>
-                    <a class="boton" href="PDFs/Currículum_1.pdf" target="_blank"> Mi CV</a>
+                    <a class="boton" href="pdf/CV-Leandro_Tanoni-Desarrollador_Junior.pdf" target="_blank"> Mi CV</a>
                 </div>
             </div>            
         </section>
 
         <section id="aptitudes">
             <h2>Aptitudes</h2>
-            <p>Estos son los lenguajes en los cuales tengo conocimiento:</p>
+            <p>Estas son algunas tecnologías en las cuales tengo conocimiento:<p>
+
             <div class="aptitudes">
                 <div class="aptitud">
-                    <img src="IMG/Aptitudes/html5.png" alt="HTML5" />
+                    <img src="https://skillicons.dev/icons?i=html&perline=14"  alt="HTML5" />
                 </div>
                 <div class="aptitud">
-                    <img src="IMG/Aptitudes/css3.png" alt="CSS3" />  
+                    <img src="https://skillicons.dev/icons?i=css&perline=14"  alt="CSS3" />  
                 </div>
                 <div class="aptitud">
-                    <img src="IMG/Aptitudes/javascript.png" alt="JavaScript" />
+                    <img src="https://skillicons.dev/icons?i=js&perline=14"  alt="JavaScript" />
                 </div>
                 <div class="aptitud">
-                    <img src="IMG/Aptitudes/C.png" alt="C" />
+                    <img src="https://skillicons.dev/icons?i=php&perline=14"  alt="PHP" />
                 </div>
                 <div class="aptitud">
-                    <img src="IMG/Aptitudes/Python.png" alt="Python" />
+                    <img src="https://skillicons.dev/icons?i=python&perline=14"  alt="Python" />
                 </div>
                 <div class="aptitud">
-                    <img src="IMG/Aptitudes/PosthreSQL.png" alt="PosthreSQL" />
+                    <img src="https://skillicons.dev/icons?i=c&perline=14"  alt="C" />
+                </div>
+                <div class="aptitud">
+                    <img src="https://skillicons.dev/icons?i=postgresql&perline=14"  alt="PosthreSQL" />
+                </div>
+                <div class="aptitud">
+                    <img src="https://skillicons.dev/icons?i=mysql&perline=14" alt="MySQL" />
                 </div>
             </div>
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2>
-            <p>Actualmente me encuentro realizando dos proyectos de Desarrollo Web para:</p>
-            <div class="contenedor-proyectos">
-                <section class="proyecto-acertagro">
-                    <a href="https://www.instagram.com/acertagro/" target="_blank">
-                        <img class="acertagro" src="IMG/Acertagro/ACERTAGRO_Iso (2).png" alt="Acertagro">
-                    </a>
-                    <h3>Acertagro® Consultora Agropecuaria</h3>
-                </section>
-                <section class="proyecto-up">
-                    <a href="https://www.instagram.com/upcentrofitness/?hl=es" target="_blank">
-                        <img class="up" src="IMG/UP/134_1601130474.jpeg" alt="UP_Centro_de_Fitness">
-                    </a>
-                    <h3>Gimnasio UP Centro de Fitness</h3>
-                </section>
+            <h2 class="titulo-seccion">Proyectos</h2>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/proyecto1.png" alt="">
+                    <div class="info">
+                        <h4><a href="https://www.instagram.com/acertagro/" target="_blank">Acertagro® Consultora Agropecuaria</a></h4>
+                        <p>Página Web en proceso...</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/UP/Sin título.png" alt="">
+                    <div class="info">
+                        <h4><a href="https://www.instagram.com/upcentrofitness/?hl=es" target="_blank">Gimnasio UP Centro de Fitness</a></h4>
+                        <p>Página Web en proceso...</p>
+                    </div>
+                </div>
             </div>
-
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/Proyecto2.png" alt="">
+                    <div class="info">
+                        <h4>Store</h4>
+                        <p>Página Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/Proyecto3.png" alt="">
+                    <div class="info">
+                        <h4>BlogCafé</h4>
+                        <p>Página Web</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <form id="form" class="formulario" action="PHP/form.php" method="POST">
+            <form id="form" class="formulario" action="https://formsubmit.co/tanoni44@gmail.com" method="POST">
                 <fieldset>
                     <legend>Contactame llenando todos los campos</legend>
                     <div class="contenedor-campos">
@@ -120,7 +149,7 @@
                         </div>
                         <div class="campo">
                             <label for="apellido"></label>
-                            <input class="input-text" type="text" name="apellido" id="nombre" placeholder="Apellido" />
+                            <input class="input-text" type="text" name="apellido" id="apellido" placeholder="Apellido" />
                         </div>
                         <div class="campo">
                             <label for="correo"></label>
@@ -141,16 +170,15 @@
 
     <footer class="footer">
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/leandro.tanoni.5" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/tanonileandro/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/leandro-tanoni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/tanonileandro" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
         <p>
             &copy Todos los derechos reservados - 2023 | Tanoni Leandro <span>Desarrollador Freelancer</span> 
         </p> 
     </footer>
-
-    <script src="JS/script.js"></script>
+    <script src="js/style.js"></script>
 </body>
 </html>

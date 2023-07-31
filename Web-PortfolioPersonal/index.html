@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollador Freelancer</title>
+    <link rel="icon" href="img/developer_software_icon_251042.ico" type="image/x-icon" />
     <link rel="preload" href="CSS/normalize.css" as="style">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preload" href="CSS/style.css" as="style">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+    <script src=></script>
 </head>
 <body>
         <header id="header" class="header">
@@ -25,23 +26,26 @@
                 </div>
                 <div id="nav-icon" class="nav-icon oculto">
                     <i class="fa-solid fa-bars"></i>
-                  </div>
-                <div class="redes">
-                    <a href="https://www.facebook.com/leandro.tanoni.5" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com/tanonileandro/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/leandro-tanoni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/tanonileandro" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="redes-nav">
+                    <div class="redes">
+                        <a href="https://www.facebook.com/leandro.tanoni.5" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/tanonileandro/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/leandro-tanoni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/tanonileandro" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <nav id="navbar" class="navegacion-principal">
+                        <ul id="links">
+                            <li><a href="#header" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mí</a></li>
+                            <li><a href="#aptitudes" onclick="seleccionar(this)">Aptitudes</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">Proyectos</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>
-        <nav id="navbar" class="navegacion-principal">
-            <ul id="links">
-                <li><a href="#header" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
-                <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mí</a></li>
-                <li><a href="#aptitudes" onclick="seleccionar(this)">Aptitudes</a></li>
-                <li><a href="#proyectos" onclick="seleccionar(this)">Proyectos</a></li>
-            </ul>
-        </nav>
+
 
     <section id="inicio" class="inicio">
         <div class="contenido-inicio">
@@ -139,7 +143,7 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <form id="form" class="formulario" action="https://formsubmit.co/tanoni44@gmail.com" method="POST">
+            <form id="form" class="formulario" action="" method="POST">
                 <fieldset>
                     <legend>Contactame llenando todos los campos</legend>
                     <div class="contenedor-campos">
